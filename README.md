@@ -12,6 +12,7 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Screenshots
 
+<img src="screenshots/splashscreen.png" height="400" alt="Screenshot"/>
 <img src="screenshots/AppViewOne.png" height="400" alt="Screenshot"/>
 <img src="screenshots/AppView2.png" height="400" alt="Screenshot"/>
 <img src="screenshots/AppView3.png" height="400" alt="Screenshot"/>
