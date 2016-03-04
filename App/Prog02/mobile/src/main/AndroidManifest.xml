@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ashleythemagnificant.prog02">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ZipcodeActivity"
+            android:label="@string/title_activity_zipcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RepresentativeView"
+            android:label="@string/title_activity_representitive_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailedView"
+            android:label="@string/title_activity_detailed_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service android:name=".PhoneToWatchService" />
+        <!-- Listeners are special services that need to be declared like below, as BIND_LISTENER -->
+        <service android:name=".PhoneListenerService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

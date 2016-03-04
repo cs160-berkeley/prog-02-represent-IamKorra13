@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ashleythemagnificant.prog02.ZipcodeActivity"
+    tools:showIn="@layout/activity_zipcode">
+
+    <EditText android:id="@+id/zipcode_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/edit_zip"/>
+
+    <Button android:id="@+id/zipcode_button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:layout_toEndOf="@id/zipcode_input"
+        android:text="@string/zipcode_button"
+        android:onClick="findRepresentativesZipcode"/>
+
+    <TextView android:id="@+id/zipcode_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/zipcode_input"
+        android:text="@string/zip_text"/>
+
+    <EditText android:id="@+id/zipcode_location"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/zipcode_text"
+        android:hint="@string/edit_location"/>
+
+    <Button android:id="@+id/location_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/zipcode_location"
+        android:layout_below="@id/zipcode_text"
+        android:text="@string/zipcode_button"
+        android:onClick="findRepresentativesLocation"/>
+</RelativeLayout>

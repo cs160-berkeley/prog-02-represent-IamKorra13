@@ -1,10 +1,10 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+This app will teach you about the Congressional Representatives of your area!
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Ashley Collins ([a.collins05@berkeley.edu](mailto:a.collins05@berkeley.edu))
 
 ## Demo Video
 
@@ -12,9 +12,10 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/AppViewOne.png" height="400" alt="Screenshot"/>
+<img src="screenshots/AppView2.png" height="400" alt="Screenshot"/>
+<img src="screenshots/AppView3.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+I would like to thank the wonderful Android Dev Docs and Stack Overflow!

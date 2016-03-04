@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Prog02</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_wear_representative_view">WearRepresentativeViewActivity</string>
+    <string name="main_view">Main View: representative list</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="title_activity_test_connection">TestConnection</string>
+    <string name="title_activity_vote_view">VoteViewActivity</string>
+    <string name="candidates">Mitt Romney  Barack Obama</string>
+    <string name="vote_button_label">2012 Votes</string>
+    <string name="back_to_main_view">Back</string>
+    <string name="dummy_text">This is filller for stufffs</string>
+    <string name="title_activity_vote_view_too">VoteViewToo</string>
+</resources>
+
