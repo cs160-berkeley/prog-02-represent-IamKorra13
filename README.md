@@ -8,7 +8,7 @@ Ashley Collins ([a.collins05@berkeley.edu](mailto:a.collins05@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See Prog 02 Description (https://youtu.be/sW6RaS1U9kI)
 
 ## Screenshots
 
