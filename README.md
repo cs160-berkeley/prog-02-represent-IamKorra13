@@ -16,7 +16,9 @@ See [your demo video title here] (https://link_to_your_video)
 <img src="screenshots/AppViewOne.png" height="400" alt="Screenshot"/>
 <img src="screenshots/AppView2.png" height="400" alt="Screenshot"/>
 <img src="screenshots/AppView3.png" height="400" alt="Screenshot"/>
-
+<img src="screenshots/Wear01.png" height="400" alt="Screenshot"/>
+<img src="screenshots/Wear02.png" height="400" alt="Screenshot"/>
+<img src="screenshots/Wear03.png" height="400" alt="Screenshot"/>
 ## Acknowledgments
 
-I would like to thank the wonderful Android Dev Docs and Stack Overflow!
+I would like to thank the wonderful Android Dev Docs and Stack Overflow for Implementing the Shake Feature!

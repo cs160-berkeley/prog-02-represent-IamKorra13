@@ -16,6 +16,9 @@ public class RepresentativeView extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private Intent intent;
     private TextView numResultsView;
+    private String tempData = "Barbara Lee_Democrat_Website_Email_Tweet_https://s3.amazonaws.com/givegreen-cdn/2014/05/Lee-pic-150x150.jpeg#"
+            + "Loni Hancock_Democrat_Website_Email_Tweet_http://postnewsgroup.com/wp-content/uploads/2014/02/LoniHancock-1.jpg#" +
+            "Mark Leno_Democrat_Website_Email_Tweet_http://www.californiaprogressreport.com/Mark-Leno.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +40,16 @@ public class RepresentativeView extends AppCompatActivity {
     }
 
     public void displayRepresentatives() {
-        String data = intent.getStringExtra("DATA");
-        String[] myDataset = convertStringToDataArray(data);
+        String[] myDataset;
+        if (intent.hasExtra("DATA")) {
+            String data = intent.getStringExtra("DATA");
+            myDataset = convertStringToDataArray(data);
+        } else if (intent.hasExtra("LOCATION")) {
+            //TODO need to reload the data poss in diff Thread
+            myDataset = convertStringToDataArray(tempData);
+        } else {
+            myDataset = convertStringToDataArray(tempData);
+        }
 
 //        Number of results display
         int numResults = myDataset.length;

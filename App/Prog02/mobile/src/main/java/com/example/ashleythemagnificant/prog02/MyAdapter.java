@@ -31,14 +31,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                     Log.i("T", "I am loggin in myAdapter");
                     /* Mobile Portion. */
                     Intent intent = new Intent(v.getContext(), DetailedView.class);
-                    intent.putExtra("SELECTION", mDataset[pos]); //  TODO
+                    TextView getView = (TextView) view.findViewById(R.id.info_text);
+                    String msg = getView.getText().toString().split("\n")[0];
+                    Log.d("T", "Message = " + msg);
+                    intent.putExtra("SELECTION", msg); //  TODO
                     v.getContext().startActivity(intent);
 
-                    /* Wear */
-                    Intent wearIntent = new Intent(v.getContext(), PhoneToWatchService.class);
-                    wearIntent.putExtra("SELECTION", mDataset[pos]); //  TODO
-                    Log.i("T", "Adapter Starting wear activity");
-                    v.getContext().startService(wearIntent);
+
+//                    /* Wear */
+//                    Intent wearIntent = new Intent(v.getContext(), PhoneToWatchService.class);
+//                    wearIntent.putExtra("SELECTION", mDataset[pos]); //  TODO
+//                    Log.i("T", "Adapter Starting wear activity");
+//                    v.getContext().startService(wearIntent);
                 }
             });
         }

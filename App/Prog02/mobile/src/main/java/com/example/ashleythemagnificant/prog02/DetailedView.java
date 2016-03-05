@@ -29,7 +29,7 @@ public class DetailedView extends AppCompatActivity {
             intent = getIntent();
         }
         String message = intent.getStringExtra("SELECTION");
-        selectedRepresentative = message.split("_")[0];
+        selectedRepresentative = message;
         Log.d("DETAILED", selectedRepresentative + " chosen");
         /* load data into HashMap. */
         data.put("image", "http://static2.politico.com/dims4/default/a08c745/2147483647/thumbnail/403x218%3E/quality/90/?url=http%3A%2F%2Fs3-origin-images.politico.com%2F2015%2F07%2F30%2F150730_barbara_lee_gty_1160.jpg");
