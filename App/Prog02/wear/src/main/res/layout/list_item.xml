@@ -3,20 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center_vertical"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="250dp"
     android:paddingTop="30dp">
 
     <ImageView
         android:id="@+id/circle"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:layout_margin="8dp"
-        android:layout_width="60dp"
-        android:src="@drawable/barbaralee"/>
+        android:layout_width="80dp"
+        />
     <TextView
         android:id="@+id/name"
         android:gravity="center_vertical|left"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:fontFamily="sans-serif-condensed-light"
-        android:textSize="8sp"/>
+        android:textSize="10sp"/>
 </com.example.ashleythemagnificant.prog02.WearableListItemLayout>

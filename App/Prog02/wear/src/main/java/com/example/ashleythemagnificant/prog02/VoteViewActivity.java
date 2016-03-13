@@ -20,6 +20,8 @@ public class VoteViewActivity extends Activity {
     private String location = "Alameda";
     private int randCount = 0;
     private int count = 0;
+    private String obama_vote;
+    private String romney_vote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +34,19 @@ public class VoteViewActivity extends Activity {
         Bundle extras = mainIntent.getExtras();
         if (extras != null) {
             Log.d("T", "in Watch Main Activity");
-
-            location = mainIntent.getStringExtra("LOCATION");
+            String[] things =  mainIntent.getStringExtra("LOCATION").split("#");
+            location = things[0].split("___")[0];
+            obama_vote = things[1].split("%%%")[0] + " %";
+            romney_vote = things[1].split("%%%")[1] + " %";
+            Log.d("VOTEVIEW", "Contents " + location + obama_vote + romney_vote);
         }
         final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub);
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
                 mTextView = (TextView) stub.findViewById(R.id.text);
-                mTextView.setText("2012 US Presidential Vote \n " + location +"\n Mitt Romney Barack Obama" +"\n 30 %      70 %");
+                mTextView.setText("2012 US Presidential Vote \n " + location
+                        +"\n Barack Obama     Mitt Romney" +"\n" + obama_vote + "              "  + romney_vote);
 //                loadData();
             }
         });
@@ -73,10 +79,6 @@ public class VoteViewActivity extends Activity {
         count++;
     }
 
-    public void loadData() {
-        TextView resultView = (TextView) findViewById(R.id.vote_results);
-        resultView.setText(" 30 %      70 %");
-    }
     @Override
     protected void onResume() {
         super.onResume();

@@ -14,40 +14,58 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="start"
-        android:src="@drawable/barbara_actionshot"/>
-
-    <TextView android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@color/red"/>
+        />
 
     <TextView android:id="@+id/party"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:padding="2dp"
+        android:layout_margin="5dp"
         android:background="@color/grey"/>
+
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="2dp"
+        android:textSize="15dp"
+        android:background="@color/grey"/>
+    <!--android:padding="5dp"-->
+
 
     <TextView android:id="@+id/rep_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:background="@color/green"/>
+        android:background="@color/grey"
+        android:padding="3dp"
+        android:layout_margin="2dp"
+        android:textSize="25dp"/>
 
     <TextView android:id="@+id/office_term"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="left"
+        android:layout_margin="3dp"
+        android:padding="5dp"
+        android:background="@color/grey"/>
 
     <TextView android:id="@+id/committee"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="@color/grey"/>
 
     <LinearLayout
         android:id="@+id/detailed_selection_layout"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="@color/grey">
 
         <TextView android:id="@+id/sponsored_bills"
             android:layout_width="match_parent"

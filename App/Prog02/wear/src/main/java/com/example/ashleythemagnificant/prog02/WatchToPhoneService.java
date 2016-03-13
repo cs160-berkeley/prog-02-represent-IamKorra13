@@ -25,6 +25,7 @@ public class WatchToPhoneService extends Service implements GoogleApiClient.Conn
     private final Service _this = this;
     private String value = "null";
     private String location = "null";
+    private String index = "null";
 
     @Override
     public void onCreate() {
@@ -59,6 +60,9 @@ public class WatchToPhoneService extends Service implements GoogleApiClient.Conn
             if (intent.hasExtra("LOCATION")) {
                 location = extras.getString("LOCATION");
             }
+            if (intent.hasExtra("INDEX")) {
+                index = extras.getString("INDEX");
+            }
             // Send the message with the cat name
             new Thread(new Runnable() {
                 @Override
@@ -92,9 +96,12 @@ public class WatchToPhoneService extends Service implements GoogleApiClient.Conn
                         if (!location.equals("null")) {
                             sendMessage("/location", location);
                             _this.stopSelf();
-                        } else {
-                            sendMessage("/selection", value);
+                        } else if (!index.equals("null")) {
+                            sendMessage("/index", index);
                             _this.stopSelf();
+                        } else {
+                                sendMessage("/selection", value);
+                                _this.stopSelf();
                         }
                     }
                 });

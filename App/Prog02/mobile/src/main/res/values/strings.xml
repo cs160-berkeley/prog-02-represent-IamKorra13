@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">Prog02</string>
     <string name="title_activity_zipcode">ZipcodeActivity</string>
-    <string name="edit_location">Choose Location</string>
-    <string name="edit_zip">Zip Code</string>
+    <string name="location_button">Use Current Location</string>
     <string name="zipcode_button">Go!</string>
-    <string name="zipcode_button2">Go Location</string>
+    <string name="edit_zip">Zip Code</string>
     <string name="zip_text">OR</string>
     <string name="title_activity_representitive_view">RepresentitiveView</string>
     <string name="title_activity_detailed_view">DetailedView</string>
